@@ -12,7 +12,7 @@
     <?php require '../private/submit.php' ?>
             <form action="" method="GET">
                         <input type="date" name="date" 
-                        value="<?= isset($_GET['date']) ? htmlspecialchars($_GET['date']) : '' ?>"/>
+                        value="<?= $_GET['date'] ?? '' ?>"/>
                         <input type="submit" value="Применить">
             </form> 
         <?php require '../private/showResult.php' ?>
